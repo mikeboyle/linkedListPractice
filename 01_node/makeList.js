@@ -5,7 +5,9 @@ const { Node } = require('./node');
  * There are many ways you can do this!
  */
 const list = new Node('A');
-// your code here
+list.next = new Node('B');
+const B = list.next;
+B.next = new Node('C');
 
 console.log(JSON.stringify(list));
 
@@ -14,3 +16,17 @@ console.log(JSON.stringify(list));
  * Example: K -> E -> L -> L -> Y
  * (Why are double letters tricky?)
  */
+const makeLNode = () => new Node('L');
+const K = new Node('K');
+const E = new Node('E');
+const firstL = makeLNode();
+const secondL = makeLNode();
+const Y = new Node('Y');
+
+const nameList = K;
+K.next = E;
+E.next = firstL;
+firstL.next = secondL;
+secondL.next = Y;
+
+console.log(JSON.stringify(nameList));
