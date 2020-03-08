@@ -13,7 +13,18 @@ const { setup } = require('./fizzbuzzSetup');
  *
  */
 const fizzbuzz = node => {
-  // your code here
+  let curr = node;
+  while (curr) {
+    if (curr.val % 15 === 0) {
+      curr.val = 'fizzbuzz';
+    } else if (curr.val % 3 === 0) {
+      curr.val = 'fizz';
+    } else if (curr.val % 5 === 0) {
+      curr.val = 'buzz';
+    }
+    curr = curr.next;
+  }
+  return node;
 };
 
 const testList = setup();

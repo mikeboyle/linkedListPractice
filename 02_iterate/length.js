@@ -1,7 +1,13 @@
 const { Node } = require('../01_node/node');
 
 const length = node => {
-  // your code here
+  let count = 0;
+  let curr = node;
+  while (curr) {
+    count++;
+    curr = curr.next;
+  }
+  return count;
 };
 
 const A = new Node('A');
