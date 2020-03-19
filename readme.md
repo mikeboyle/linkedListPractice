@@ -4,18 +4,13 @@ We're going to practice writing live code with linked lists!
 
 Linked lists are an important data structure. Some of the data structures you use every day are built out of linked lists, for example stacks and queues. Having said that, you will never create a linked list from scratch in real life, except in job interviews.
 
-This repo is a **practical** tutorial for working with linked lists in code that you need to write quickly, like in an interview. Emphasis here is on the practical, meaning:
+Here's what we're going to cover:
 
-- We'll be talking about the minimal code you need to get the job done in an interview.
-- We won't be going into much theory about linked lists or their Big O complexity. You do need to know why linked lists are better or worse than arrays in different applications, but we won't deal with that directly here.
-- We also won't be building real-life industrial strength implementations of linked lists like the ones you may have seen in textbooks, lectures, or other tutorials. Those implementations can run into the 100s of lines of code and would never fit on a whiteboard.
-
-Some of the things that we **will** emphasize are:
-
-- Linked lists are incredibly simple to understand in theory
-- It is very easy to get tripped up writing linked list code
-- You will learn a lot about pointer variables
-- You will get a lot of hands-on practice writing this tricky code until it feels natural
+- quick review of the linked list data structure
+- how linked lists are done differently in job interviews
+- working with the `Node` class
+- iterating through linked lists
+- more topics will appear here for future workshops!
 
 ### Using this tutorial repo
 
