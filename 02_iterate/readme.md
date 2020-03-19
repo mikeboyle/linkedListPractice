@@ -24,16 +24,12 @@ Here's how we solve these problems.
 
 First we'll practice traversing a list that already exists.
 
-1. Walk through the code for `printLinkedList.js` and convince yourself that it works, and why.
-2. `length.js`: write a function that counts the nodes in a linked list.
-3. `double.js`: write a function that visits each node and doubles its value.
-4. `fizzbuzz.js`: write a function that traverses a linked list and changes the node values to `fizz`, `buzz`, and `fizzbuzz`.
+1. We'll walk through the code for `printLinkedList.js` and convince ourselves that it works, and why.
+1. `length.js`: write a function that counts the nodes in a linked list.
+1. `nthValjs`: write a function that finds the nth value in a linked list.
+1. `double.js`: write a function that visits each node and doubles its value.
+1. `fizzbuzz.js`: write a function that traverses a linked list and changes the node values to `fizz`, `buzz`, and `fizzbuzz`.
 
 If there's time, here are some trickier ones to do next!
-
-1. `makeListOfSize.js`: Make a linked list of size n with values 0...n-1. You will need to iterate through the integers **and** traverse the list.
-1. `fibonacci.js`: Make a linked list with nodes that have values in the Fibonacci series. This one is super tricky!
-
-For the tricky ones, you'll discover that the `Node` class does not have a `push` method. So you'll have to figure out how to add a new node to the end of the list. (Hint: can I do this by incrementing my pointer?)
 
 The most important thing about these exercises is to keep talking and never give up. At the same time, after a certain point it is probably more helpful to see some answers. If you want to see the answers, they are on a separate branch.

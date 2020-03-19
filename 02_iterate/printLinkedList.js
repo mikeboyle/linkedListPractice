@@ -1,8 +1,12 @@
 const { Node } = require('../01_node/node');
 
-const linkedListValues = node => {
-  // Create a results array to hold values
-  const values = [];
+/**
+ * Given a linked list node, print out its values.
+ * Ex: A -> B -> C
+ */
+const printLinkedList = node => {
+  // Create a results string that we'll build up
+  let res = '';
 
   // Set the pointer to the start
   let curr = node;
@@ -10,19 +14,18 @@ const linkedListValues = node => {
   // Use node.next to iterate through all nodes
   // until we finish the list and hit a null node
   while (curr) {
-    // Put the value in our results array
-    values.push(curr.val);
+    // Add the value to the results string.
+    // If there is a next value, add the -> pointer
+    res += curr.val;
+    if (curr.next) {
+      res += ' -> ';
+    }
 
     // "Increment" the pointer to the next node
     curr = curr.next;
   }
 
-  return values;
-};
-
-const printLinkedList = node => {
-  const values = linkedListValues(node);
-  console.log(values.join(' -> '));
+  console.log(res);
 };
 
 const testPrintLinkedList = () => {
