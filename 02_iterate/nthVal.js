@@ -7,7 +7,18 @@ const { printLinkedList } = require('./printLinkedList');
  * If n is greater than the number of nodes, it returns null.
  */
 const nthVal = (node, n) => {
-  // your code here
+  // Set a length counter and a pointer
+  let curr = node;
+  let count = 1;
+
+  while (curr && count < n) {
+    // Advance the pointer
+    curr = curr.next;
+    // Increment the counter
+    count++;
+  }
+
+  return curr ? curr.val : null;
 };
 
 const A = new Node('A');
